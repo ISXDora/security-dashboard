@@ -54,7 +54,14 @@ jobs:
           jq '[.Results[]?.Vulnerabilities[]?.Severity]' resultado.json
       - name: contar por severidade
         run: |
-          jq '[.Results[]?.Vulnerabilities[]?.Severity]
-              | group_by(.)
-              | map({(.[0]): length})
-              | add // {}' resultado.json
+          jq -c '{repo: "${{ matrix.repo }}"}
+                 + ([.Results[]?.Vulnerabilities[]?.Severity]
+                    | group_by(.)
+                    | map({(.[0]): length})
+                    | add // {})' resultado.json | tee contagem.json
+
+      - name: salvar
+        uses: actions/upload-artifact@v4
+        with:
+          name: contagem-${{ matrix.repo }}
+          path: contagem.json
