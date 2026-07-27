@@ -44,14 +44,11 @@ jobs:
 
       - name: explorar o json
         run: |
-          echo "=== bytes ==="
-          wc -c resultado.json
+          echo "=== camada 1: quais Targets ==="
+          jq '.Results[] | .Target' resultado.json
 
-          echo "=== chaves do topo ==="
-          jq 'keys' resultado.json
+          echo "=== camada 2: total de vulnerabilidades ==="
+          jq '[.Results[].Vulnerabilities[]] | length' resultado.json
 
-          echo "=== quantos Results ==="
-          jq '.Results | length' resultado.json
-
-          echo "=== uma vulnerabilidade inteira ==="
-          jq '.Results[0].Vulnerabilities[0]' resultado.json
+          echo "=== camada 3: lista de severidades ==="
+          jq '[.Results[].Vulnerabilities[].Severity]' resultado.json
