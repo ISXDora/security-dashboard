@@ -18,7 +18,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           repos=$(gh repo list ${{ github.repository_owner }} \
-            --limit 200 --no-archived --json name | jq -c '[.[].name]')
+            --limit 200 --no-archived --visibility public --json name | jq -c '[.[].name]')
 
           echo "$repos"
           echo "repos=$repos" >> "$GITHUB_OUTPUT"
