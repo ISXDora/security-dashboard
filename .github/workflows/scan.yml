@@ -45,10 +45,10 @@ jobs:
       - name: explorar o json
         run: |
           echo "=== camada 1: quais Targets ==="
-          jq '.Results[] | .Target' resultado.json
+          jq '.Results[]?.Target' resultado.json
 
           echo "=== camada 2: total de vulnerabilidades ==="
-          jq '[.Results[].Vulnerabilities[]] | length' resultado.json
+          jq '[.Results[]?.Vulnerabilities[]?] | length' resultado.json
 
           echo "=== camada 3: lista de severidades ==="
-          jq '[.Results[].Vulnerabilities[].Severity]' resultado.json
+          jq '[.Results[]?.Vulnerabilities[]?.Severity]' resultado.json
