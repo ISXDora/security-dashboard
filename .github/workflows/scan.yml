@@ -3,12 +3,25 @@ name: security dashboard
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   scan:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - movetech-magalu
+          - api-vendas-
+          - juiceshop
     steps:
-      - name: reconhecimento do terreno
-        run: |
-          echo "dono do repo: ${{ github.repository_owner }}"
-          df -h /
-          free -h
+      - name: escanear ${{ matrix.repo }}
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: 'repo'
+          scan-ref: 'https://github.com/${{ github.repository_owner }}/${{ matrix.repo }}'
+          scanners: 'vuln'
+          format: 'table'
+          exit-code: '0'
