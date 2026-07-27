@@ -1,0 +1,166 @@
+<svg width="680" height="434" viewBox="0 0 680 434"
+     xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="680" height="434" fill="#111217"/>
+
+  <text x="15" y="24" font-family="Inter, sans-serif" font-size="13"
+        fill="#ccccdc">security posture</text>
+  <text x="128" y="24" font-family="Inter, sans-serif" font-size="11"
+        fill="#6e7583">/ ISXDora</text>
+  <text x="15" y="40" font-family="Inter, sans-serif" font-size="10"
+        fill="#6e7583">varredura de dependências · todos os repositórios públicos</text>
+  <rect x="524" y="14" width="141" height="20" rx="3"
+        fill="#181b1f" stroke="#2c3235"/>
+  <text x="536" y="28" font-family="Inter, sans-serif" font-size="10"
+        fill="#9fa7b3">linha de base · 2026-07-27</text>
+
+  <rect x="15" y="54" width="152" height="76" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="27" y="74" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">repositórios</text>
+  <text x="27" y="112" font-family="Inter, sans-serif"
+        font-size="26" fill="#5794f2">52</text>
+  <rect x="177" y="54" width="152" height="76" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="189" y="74" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">critical</text>
+  <text x="189" y="112" font-family="Inter, sans-serif"
+        font-size="26" fill="#f2495c">185</text>
+  <rect x="339" y="54" width="152" height="76" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="351" y="74" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">high</text>
+  <text x="351" y="112" font-family="Inter, sans-serif"
+        font-size="26" fill="#ff9830">1253</text>
+  <rect x="501" y="54" width="152" height="76" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="513" y="74" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">achados</text>
+  <text x="513" y="112" font-family="Inter, sans-serif"
+        font-size="26" fill="#ccccdc">2826</text>
+  <rect x="15" y="142" width="638" height="174" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="27" y="162" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">distribuição · 76% dos achados estão em 8 de 52 repositórios</text>
+  <text x="27" y="177" font-family="monospace" font-size="10"
+        fill="#9fa7b3">exercices-react</text>
+  <rect x="222.0" y="168" width="38.4" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="260.4" y="168" width="172.2" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="432.6" y="168" width="129.5" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="562.1" y="168" width="39.9" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="177" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">534</text>
+  <text x="27" y="193" font-family="monospace" font-size="10"
+        fill="#9fa7b3">Testes-t-cnicos</text>
+  <rect x="222.0" y="184" width="14.2" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="236.2" y="184" width="111.7" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="348.0" y="184" width="91.1" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="439.0" y="184" width="24.9" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="193" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">340</text>
+  <text x="27" y="209" font-family="monospace" font-size="10"
+        fill="#9fa7b3">criando-um-hook-de-carrinho-de</text>
+  <rect x="222.0" y="200" width="6.4" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="228.4" y="200" width="89.0" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="317.4" y="200" width="84.7" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="402.0" y="200" width="19.9" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="209" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">281</text>
+  <text x="27" y="225" font-family="monospace" font-size="10"
+        fill="#9fa7b3">mural_de_mensagens</text>
+  <rect x="222.0" y="216" width="12.8" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="234.8" y="216" width="70.4" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="305.3" y="216" width="51.2" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="356.5" y="216" width="17.8" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="225" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">214</text>
+  <text x="27" y="241" font-family="monospace" font-size="10"
+        fill="#9fa7b3">agenda</text>
+  <rect x="222.0" y="232" width="12.8" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="234.8" y="232" width="70.4" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="305.3" y="232" width="50.5" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="355.8" y="232" width="17.8" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="241" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">213</text>
+  <text x="27" y="257" font-family="monospace" font-size="10"
+        fill="#9fa7b3">Blog-Loreipsum</text>
+  <rect x="222.0" y="248" width="12.8" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="234.8" y="248" width="66.2" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="301.0" y="248" width="49.1" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="350.1" y="248" width="17.8" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="257" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">205</text>
+  <text x="27" y="273" font-family="monospace" font-size="10"
+        fill="#9fa7b3">refactoring-de-classes-e-types</text>
+  <rect x="222.0" y="264" width="10.0" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="232.0" y="264" width="57.6" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="289.6" y="264" width="48.4" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="338.0" y="264" width="16.4" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="273" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">186</text>
+  <text x="27" y="289" font-family="monospace" font-size="10"
+        fill="#9fa7b3">maisart-api</text>
+  <rect x="222.0" y="280" width="8.5" height="10"
+        fill="#f2495c" opacity="1"/>
+  <rect x="230.5" y="280" width="38.4" height="10"
+        fill="#ff9830" opacity="1"/>
+  <rect x="269.0" y="280" width="44.8" height="10"
+        fill="#fade2a" opacity="0.75"/>
+  <rect x="313.8" y="280" width="21.3" height="10"
+        fill="#5794f2" opacity="0.55"/>
+  <text x="632" y="289" text-anchor="end"
+        font-family="monospace" font-size="10" fill="#ccccdc">159</text>
+  <rect x="27" y="298" width="8" height="8" rx="2" fill="#f2495c"/>
+  <text x="40" y="306" font-family="Inter, sans-serif" font-size="10"
+        fill="#9fa7b3">critical</text>
+  <rect x="102" y="298" width="8" height="8" rx="2" fill="#ff9830"/>
+  <text x="115" y="306" font-family="Inter, sans-serif" font-size="10"
+        fill="#9fa7b3">high</text>
+  <rect x="177" y="298" width="8" height="8" rx="2" fill="#fade2a"/>
+  <text x="190" y="306" font-family="Inter, sans-serif" font-size="10"
+        fill="#9fa7b3">medium</text>
+  <rect x="252" y="298" width="8" height="8" rx="2" fill="#5794f2"/>
+  <text x="265" y="306" font-family="Inter, sans-serif" font-size="10"
+        fill="#9fa7b3">low</text>
+  <rect x="15" y="324" width="638" height="96" rx="3"
+        fill="#181b1f" stroke="#2c3235" stroke-width="1"/>
+  <text x="27" y="344" font-family="Inter, sans-serif"
+        font-size="11" fill="#9fa7b3">alcance da medição</text>
+  <text x="27" y="366" font-family="Inter, sans-serif" font-size="10.5"
+        fill="#9fa7b3">26 dos 52 repositórios não retornaram achados. Inclui projetos sem arquivo de dependência declarado,</text>
+  <text x="27" y="382" font-family="Inter, sans-serif" font-size="10.5"
+        fill="#9fa7b3">que o scanner não consegue avaliar — ausência de achado não equivale a ausência de risco.</text>
+  <line x1="27" y1="394" x2="641" y2="394" stroke="#2c3235"/>
+  <text x="27" y="410" font-family="monospace" font-size="9.5"
+        fill="#6e7583">trivy · scan-type: repo · scanners: vuln</text>
+  <text x="641" y="410" text-anchor="end" font-family="monospace" font-size="9.5"
+        fill="#6e7583">série temporal a partir da 2ª execução</text>
+
+</svg>
