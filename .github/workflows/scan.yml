@@ -1,0 +1,14 @@
+name: security dashboard
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reconhecimento do terreno
+        run: |
+          echo "dono do repo: ${{ github.repository_owner }}"
+          df -h /
+          free -h
