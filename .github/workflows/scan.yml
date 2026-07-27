@@ -65,3 +65,36 @@ jobs:
         with:
           name: contagem-${{ matrix.repo }}
           path: contagem.json
+  agregar:
+    needs: scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: baixar as contagens
+        uses: actions/download-artifact@v4
+        with:
+          path: contagens
+
+      - name: ver o que veio
+        run: |
+          find contagens -name '*.json' | wc -l
+          cat contagens/*/contagem.json
+
+      - name: juntar
+        run: |
+          cat contagens/*/contagem.json | jq -s '{
+            generated_at: (now | todate),
+            totals: {
+              repos:    length,
+              critical: (map(.CRITICAL // 0) | add),
+              high:     (map(.HIGH     // 0) | add),
+              medium:   (map(.MEDIUM   // 0) | add),
+              low:      (map(.LOW      // 0) | add)
+            },
+            repos: .
+          }' | tee summary.json
+
+      - name: salvar
+        uses: actions/upload-artifact@v4
+        with:
+          name: summary
+          path: summary.json
