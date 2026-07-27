@@ -38,5 +38,20 @@ jobs:
           scan-type: 'repo'
           scan-ref: 'https://github.com/${{ github.repository_owner }}/${{ matrix.repo }}'
           scanners: 'vuln'
-          format: 'table'
+          format: 'json'
+          output: 'resultado.json'
           exit-code: '0'
+
+      - name: explorar o json
+        run: |
+          echo "=== bytes ==="
+          wc -c resultado.json
+
+          echo "=== chaves do topo ==="
+          jq 'keys' resultado.json
+
+          echo "=== quantos Results ==="
+          jq '.Results | length' resultado.json
+
+          echo "=== uma vulnerabilidade inteira ==="
+          jq '.Results[0].Vulnerabilities[0]' resultado.json
