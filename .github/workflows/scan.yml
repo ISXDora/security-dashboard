@@ -52,3 +52,9 @@ jobs:
 
           echo "=== camada 3: lista de severidades ==="
           jq '[.Results[]?.Vulnerabilities[]?.Severity]' resultado.json
+      - name: contar por severidade
+        run: |
+          jq '[.Results[]?.Vulnerabilities[]?.Severity]
+              | group_by(.)
+              | map({(.[0]): length})
+              | add // {}' resultado.json
